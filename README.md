@@ -4,5 +4,12 @@ ETzinho é um aplicativo de saúde afetivo, desenvolvido especialmente para pess
 
 Porque saúde é um tópico importante, e a saúde de pessoas que enfrentam desafios emocionais, como a depressão, não deve ser esquecida!
 
-Acesse agora o vídeo Pitch de 1 minuto do projeto ETzinho: https://youtu.be/Y0bW3xkVK9Y
+## Acesse agora o vídeo Pitch de 1 minuto do projeto ETzinho: ## https://youtu.be/Y0bW3xkVK9Y
+
+## Integrantes do projeto:
+
+Abner Rodrigues Ferreira | RM 559568
+Luma Levenhagen Alarcon da Fonseca | RM 559972 
+Pedro Henrique Freire Gil | RM 560254
+Thaís Vanessa de Oliveira | RM 560160
 
