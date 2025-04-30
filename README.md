@@ -6,7 +6,7 @@ ETzinho é um aplicativo de saúde afetivo, desenvolvido especialmente para pess
 
 Porque saúde é um tópico importante, e a saúde de pessoas que enfrentam desafios emocionais, como a depressão, não deve ser esquecida!
 
-## Vídeo Pitch de 1 minuto do projeto ETzinho: https://youtu.be/Y0bW3xkVK9Y
+## Vídeo Pitch de 1 minuto do projeto ETzinho com amostras do Figma: https://youtu.be/Y0bW3xkVK9Y
 
 ## Integrantes do projeto:
 
