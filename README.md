@@ -8,6 +8,10 @@ Porque saúde é um tópico importante, e a saúde de pessoas que enfrentam desa
 
 ## Vídeo Pitch de 1 minuto do projeto ETzinho com amostras do Figma: https://youtu.be/Y0bW3xkVK9Y
 
+## Primeiro Protótipo (Inicial) do Figma
+
+https://www.figma.com/proto/DbXp0CI7ulZEnj39z9YXnp/Untitled?node-id=91-273&p=f&t=mcN0c18THymt95qy-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1
+
 ## Integrantes do projeto:
 
 Abner Rodrigues Ferreira | RM 559568
