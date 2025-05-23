@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pesquisar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .pesquisa-container {
+      margin-top: 4rem;
+      text-align: center;
+    }
+
+    .input-pesquisa {
+      padding: 0.8rem 1.2rem;
+      font-size: 1rem;
+      border: 2px solid #8EC6BD;
+      border-radius: 10px;
+      width: 250px;
+      max-width: 80%;
+      margin-bottom: 1.5rem;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .input-pesquisa:focus {
+      border-color: #5ea9a0;
+      box-shadow: 0 0 5px #8EC6BD77;
+    }
+
+    .botoes-pesquisa {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-pesquisa {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 2px solid #8EC6BD;
+      background-color: #8EC6BD;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-pesquisa:hover {
+      background-color: white;
+      color: #8EC6BD;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="nav-menu"></nav>
+  </header>
+
+  <main class="pesquisa-container">
+    <h1>Pesquisar locais</h1>
+    <h3>Pesquise por academias ou parques perto de você.</h3>
+    <input type="text" id="local" placeholder="Digite o local..." class="input-pesquisa" />
+    <div class="botoes-pesquisa">
+      <button class="btn-pesquisa" onclick="pesquisarLocal()">Pesquisar</button>
+      <button class="btn-pesquisa" onclick="window.open('https://open.spotify.com', '_blank')">Abrir Spotify</button>
+    </div>
+
+    <button class="next-btn" onclick="irParaProximaPagina()">➜</button>
+
+  </main>
+  <img src="assets/parque.png" alt="parque" />
+
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('nav-menu').innerHTML = data);
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
