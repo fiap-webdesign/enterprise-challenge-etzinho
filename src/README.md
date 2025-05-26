@@ -55,6 +55,11 @@ https://youtu.be/iFQqLaNsNJ4
 
 ---
 
+## Link da Vercel:
+https://enterprise-challenge-etzinho-main.vercel.app/bem-vindo.html
+
+---
+
 ## 👥 Integrantes do projeto:
 
 - **Abner Rodrigues Ferreira** | RM 559568  
