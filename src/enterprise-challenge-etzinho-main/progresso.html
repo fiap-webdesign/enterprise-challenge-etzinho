@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progresso</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="nav-menu"></nav>
+  </header>
+
+  <main>
+    <h1>Selecione o seu Progresso Diário</h1>
+    <div class="barras">
+      <div class="barra"><label>Água</label><progress id="agua" max="100" value="20"></progress></div>
+      <div class="barra"><label>Alimentação</label><progress id="alimentacao" max="100" value="20"></progress></div>
+      <div class="barra"><label>Higiene</label><progress id="higiene" max="100" value="20"></progress></div>
+      <div class="barra"><label>Sono</label><progress id="sono" max="100" value="20"></progress></div>
+      <div class="barra"><label>Exercício</label><progress id="exercicio" max="100" value="20"></progress></div>
+      <div class="barra"><label>Leitura</label><progress id="leitura" max="100" value="20"></progress></div>
+      <div class="barra"><label>Mediatação</label><progress id="meditacao" max="100" value="20"></progress></div>
+      <div class="barra"><label>Pele</label><progress id="pele" max="100" value="20"></progress></div>
+      <div class="barra"><label>Natureza</label><progress id="natureza" max="100" value="20"></progress></div>
+    </div>
+
+    <img id="avatar-loja" src="assets/trevo.png" alt="Avatar com roupa" />
+    <div class="checkboxes">
+      <button class="check-btn"
+        onclick="toggleCheck(this); atualizarProgresso('agua', this.classList.contains('ativo'))">Água</button>
+      <button class="check-btn"
+        onclick="toggleCheck(this); atualizarProgresso('alimentacao', this.classList.contains('ativo'))">Alimentação</button>
+      <button class="check-btn"
+        onclick="toggleCheck(this); atualizarProgresso('higiene', this.classList.contains('ativo'))">Higiene</button>
+      <button class="check-btn"
+        onclick="toggleCheck(this); atualizarProgresso('sono', this.classList.contains('ativo'))">Sono</button>
+      <button class="check-btn"
+        onclick="toggleCheck(this); atualizarProgresso('exercicio', this.classList.contains('ativo'))">Exercício</button>
+      <button class="check-btn"
+        onclick="toggleCheck(this); atualizarProgresso('leitura', this.classList.contains('ativo'))">Leitura</button>
+      <button class="check-btn"
+        onclick="toggleCheck(this); atualizarProgresso('meditacao', this.classList.contains('ativo'))">Meditação</button>
+      <button class="check-btn"
+        onclick="toggleCheck(this); atualizarProgresso('pele', this.classList.contains('ativo'))">Cuidados com a
+        pele</button>
+      <button class="check-btn"
+        onclick="toggleCheck(this); atualizarProgresso('natureza', this.classList.contains('ativo'))">Conexão com a
+        natureza</button>
+      <button class="next-btn" onclick="irParaProximaPagina()">➜</button>
+    </div>
+  </main>
+
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('nav-menu').innerHTML = data);
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="nav-menu"></nav>
+  </header>
+
+  <main>
+    <h1>Loja de Acessórios</h1>
+    <div class="checkboxes">
+      <button class="check-btn" onclick="mudarAvatar(0); toggleCheck(this)">Look 1</button>
+      <button class="check-btn" onclick="mudarAvatar(1); toggleCheck(this)">Look 2</button>
+      <button class="check-btn" onclick="mudarAvatar(2); toggleCheck(this)">Look 3</button>
+      <button class="check-btn" onclick="mudarAvatar(3); toggleCheck(this)">Look 4</button>
+      <button class="check-btn" onclick="mudarAvatar(4); toggleCheck(this)">Look 5</button>
+      <button class="check-btn" onclick="mudarAvatar(5); toggleCheck(this)">Look 6</button>
+    </div>
+    <img id="avatar-loja" src="assets/look1.png" alt="Avatar com roupa" />
+    <h2>O seu saldo é de apenas 30 moedas atualmente. Volte amanhã para resgatar mais 30!</h2>
+    <button class="next-btn" onclick="irParaProximaPagina()">➜</button>
+  </main>
+
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('nav-menu').innerHTML = data);
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

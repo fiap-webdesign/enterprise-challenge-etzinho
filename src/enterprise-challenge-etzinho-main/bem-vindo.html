@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bem-vindo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="nav-menu"></nav>
+  </header>
+
+  <main>
+    <h1>Bem-vindo(a)</h1>
+    <img src="assets/avatar.png" alt="Avatar" />
+    <h2>Selecione todas as suas metas diárias. Aguarde os meus lembretes!</h2>
+    <div class="checkboxes">
+      <button class="check-btn" onclick="toggleCheck(this)">Água</button>
+      <button class="check-btn" onclick="toggleCheck(this)">Alimentação</button>
+      <button class="check-btn" onclick="toggleCheck(this)">Higiene Pessoal</button>
+      <button class="check-btn" onclick="toggleCheck(this)">Sono</button>
+      <button class="check-btn" onclick="toggleCheck(this)">Exercício Físico</button>
+      <button class="check-btn" onclick="toggleCheck(this)">Leitura</button>
+      <button class="check-btn" onclick="toggleCheck(this)">Meditação</button>
+      <button class="check-btn" onclick="toggleCheck(this)">Cuidados com a pele</button>
+      <button class="check-btn" onclick="toggleCheck(this)">Conexão com a natureza</button>
+    </div>
+    <button class="next-btn" onclick="irParaProximaPagina()">➜</button>
+  </main>
+
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        const nav = document.getElementById('nav-menu');
+        if (nav) nav.innerHTML = data;
+      });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

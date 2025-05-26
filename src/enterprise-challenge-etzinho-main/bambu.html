@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bambu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="nav-menu"></nav>
+  </header>
+
+  <main>
+    <h1>Conheça o seu Bambu da Sorte!</h1>
+    <img src="assets/bambu da sorte.png" alt="Bambu da sorte" />
+    <h2>Colete 30 moedas diárias e veja o seu bambu da sorte crescer!</h2>
+    <button class="next-btn" onclick="irParaProximaPagina()">➜</button>
+  </main>
+
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        const nav = document.getElementById('nav-menu');
+        if (nav) nav.innerHTML = data;
+      });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
